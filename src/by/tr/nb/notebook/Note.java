@@ -1,4 +1,4 @@
-package by.tr.nb;
+package by.tr.nb.notebook;
 
 import java.io.Serializable;
 import java.util.Date;
@@ -7,6 +7,10 @@ public class Note implements Serializable {
 	
 //	private static int count;
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private String note;
 	private Date date;
 	
@@ -18,7 +22,7 @@ public class Note implements Serializable {
 	
 	public Note(String note) {
 		this.note = note;
-		this.date = null;
+		this.date = new Date();
 		}
 	
 

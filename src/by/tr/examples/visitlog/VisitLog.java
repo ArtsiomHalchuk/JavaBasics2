@@ -1,4 +1,4 @@
-package by.tr.examples;
+package by.tr.examples.visitlog;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -10,11 +10,3 @@ public class VisitLog {
 	private String securityOficerName;
 }
 
-private class Visit {
-	private Date dateOfVisit;
-	private String visitorName;
-	private String timeOfEnter;
-	private String timeOfExit;
-	private String description;
-	
-}

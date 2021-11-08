@@ -1,6 +1,7 @@
-package by.tr.nb;
+package by.tr.nb.notebook;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 public class NoteBook {
@@ -18,11 +19,31 @@ public class NoteBook {
 		notes.remove(obj);
 	}
 
-	public void printNotes() {
+	public void addNote(String noteContent) {
+		notes.add(new Note(noteContent));
+	}
+	public int size() {
+		return notes.size();
+	}
+	
+	public List<Note> find(String noteText){
+		List<Note> result = new ArrayList<Note>();
 		for (Note note: notes) {
-			System.out.printf("|%-10s|%-10s|\n", "Note", "Date");
-			System.out.printf("|%-10s|%-10s|\n", note.getNote(), note.getDate());
+			if (note.getNote().equals(noteText)) {
+				result.add(note);
+			}
 		}
+		return result;
+	}
+	
+	public List<Note> find(Date date){
+		List<Note> result = new ArrayList<Note>();
+		for (Note note: notes) {
+			if (note.getDate().equals(date)) {
+				result.add(note);
+			}
+		}
+		return result;
 	}
 	
 	public List<Note> getNotes() {

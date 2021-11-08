@@ -1,4 +1,4 @@
-package by.tr.examples;
+package by.tr.examples.habitstracker;
 
 
 import java.util.ArrayList;
@@ -13,9 +13,3 @@ public class HabitsTracker{
 	
 }
 
-public class DayOfMonth {
-	public int indexNumber;
-	public Date date;
-	public String dayOfWeek;
-	private boolean isHabitDone;
-}

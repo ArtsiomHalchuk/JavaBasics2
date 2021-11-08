@@ -1,4 +1,4 @@
-package by.tr.examples;
+package by.tr.examples.Planer;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -10,10 +10,3 @@ public class Planer {
 	private List<Target>plans = new ArrayList<Target>();
 }
 
-public class Target{
-	private String targetName;
-	private Date deadlineForTarget;
-	private Date startOfExecution;
-	private String targetDetails;
-	private boolean isDone;
-}
