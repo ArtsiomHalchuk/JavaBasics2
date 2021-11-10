@@ -46,6 +46,10 @@ public class Note implements Serializable {
 	public void setDate(Date date) {
 		this.date = date;
 	}
+	
+	public boolean equalContent(String content) {
+		return note.equals(content);
+	}
 
 	@Override
 	public int hashCode() {

@@ -26,25 +26,6 @@ public class NoteBook {
 		return notes.size();
 	}
 	
-	public List<Note> find(String noteText){
-		List<Note> result = new ArrayList<Note>();
-		for (Note note: notes) {
-			if (note.getNote().equals(noteText)) {
-				result.add(note);
-			}
-		}
-		return result;
-	}
-	
-	public List<Note> find(Date date){
-		List<Note> result = new ArrayList<Note>();
-		for (Note note: notes) {
-			if (note.getDate().equals(date)) {
-				result.add(note);
-			}
-		}
-		return result;
-	}
 	
 	public List<Note> getNotes() {
 		return notes;

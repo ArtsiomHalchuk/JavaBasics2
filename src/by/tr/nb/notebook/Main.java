@@ -11,6 +11,9 @@ public class Main {
 			
 			NoteBook nb = provider.getNoteBook(0);
 			
+			NoteBookLogic logic = new NoteBookLogic(nb);
+			
+			
 			nb.addNote("note1");
 			nb.addNote("note2");
 			
@@ -23,11 +26,9 @@ public class Main {
 			
 			
 			nb=provider.getNoteBook(0);
-			nb.find("note1");
-			print(nb.find("note1"));
-			print(nb.find(new Date()));
+
 		
-			
+			logic.addNote("note1");
 			
 		
 		}
